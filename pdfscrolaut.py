@@ -18,6 +18,13 @@ while True:
         myHandType = detector.handType()
         cv2.putText(img, f'Hand:{myHandType}', (bbox[0], bbox[1] - 30),
                     cv2.FONT_HERSHEY_PLAIN, 2, (0, 255, 0), 2)
+        if myHandType == "Right":
+            pyautogui.keyDown("PgUp")
+            time.sleep(1)
+
+        else:
+            pyautogui.keyDown("PgDn")
+            time.sleep(1)
 
 
     cv2.imshow("Image", img)

@@ -20,11 +20,11 @@ while True:
                     cv2.FONT_HERSHEY_PLAIN, 2, (0, 255, 0), 2)
         if myHandType == "Right":
             pyautogui.keyDown("PgUp")
-            time.sleep(1)
+            sleep(1)
 
         else:
             pyautogui.keyDown("PgDn")
-            time.sleep(1)
+            sleep(1)
 
 
     cv2.imshow("Image", img)
